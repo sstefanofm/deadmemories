@@ -4,6 +4,10 @@
     font-family: 'Abril Fatface', cursive;
 }
 
+.main-logo {
+    margin-top: 1em;
+}
+
 .main-logo img {
     width: 200px;
     float: left;
@@ -47,4 +51,27 @@
 .items a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.items a.active {
+    border-bottom: 2px solid #fff;
+}
+
+@media (max-width: 1060px) {
+    .main-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .items {
+        display: flex;
+        justify-content: center;
+        float: none;
+    }
+
+    .items li {
+        display: block;
+        margin: 1.7em;
+        text-align: center;
+    }
 }
