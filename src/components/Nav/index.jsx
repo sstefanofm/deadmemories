@@ -4,7 +4,10 @@ import Items from './Items'
 
 const Nav = () => {
   return (
-    <header role='banner'>
+    <header
+      className='Nav'
+      role='banner'
+    >
       <Logo />
       <Items />
     </header>
