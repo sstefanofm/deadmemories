@@ -1,24 +1,27 @@
 :root {
-  font-family: 'Abril Fatface', cursive;
+  /* vars */
+  --font-color: #fff;
+  --font-family: 'Abril Fatface', cursive;
+  --font-size: 20px;
+  --bg-color: #000;
+
+  font-family: var(--font-family);
 
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #000;
+  color: var(--font-color);
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  /* vars */
-  --phone-maxwidth: 720px;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: var(--font-size);
   max-width: 1280px;
   margin: auto;
 }
